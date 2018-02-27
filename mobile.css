@@ -1,0 +1,27 @@
+@media only screen and (max-width: 650px) {
+    #main {
+        flex-flow: column;
+    }
+
+    #search {
+        flex-basis: 100%;
+    }
+    #search > div {
+        padding: 5rem 1rem 0 1rem;
+        height: auto;
+        width: 100%;
+        background: #2b2b2b;
+        z-index: 1;
+    }
+    #search p {
+        text-align: center;
+    }
+    #searchItem {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 21rem auto 0 auto;
+    }
+    #content {
+        margin-top: 5rem;
+    }
+}

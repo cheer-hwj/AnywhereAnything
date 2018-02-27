@@ -1,0 +1,150 @@
+ * {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    outline: 0;
+}
+html, body {
+    height: 100%;
+    font-size: 14px;
+}
+body{
+    background-color: #2b2b2b;
+    color: #efefef;
+    font-family: Arial, "Microsoft YaHei";
+}
+#main {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100%;
+}
+#search {
+    flex: 0 0 20%;
+    align-self: stretch;
+}
+#search > div {
+    position: fixed;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    display: flex;
+    padding: 20% 1rem 0 1rem;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+}
+#searchBox {
+    box-sizing: border-box;
+    height: 4rem;
+    line-height: 4rem;
+    width: 100%;
+    padding: 0 2em;
+    color: inherit;
+    font-size: 1.2rem;
+    background: url(img/searchicon.png) no-repeat  right center #3f3f3f;
+    border-radius: 30px;
+}
+#searchBox:focus {
+    background: #444;
+}
+#search p {
+    padding: 2rem 0;
+    color: #666;
+    font-size: .6rem;
+}
+#search a {
+    color: #2fb388
+}
+#searchItem {
+    margin-top: 20%;
+    margin-right: 2rem;
+    list-style-type: none;
+}
+#searchItem li {
+    margin: .3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 2px #111;
+    cursor: pointer;
+}
+#searchItem li img {
+    width: 100%;
+}
+#content {
+    margin-top: 18%;
+}
+#content > div {
+    display: flex;
+    flex-flow: row wrap;
+}
+.item {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+.wrap {
+    padding: 1rem 0;
+    text-align: center;
+}
+.wrap h2 {
+    font-weight: normal;
+    color: #2fb388;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.recommend img {
+    margin: .5rem 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    box-shadow: 0 4px 4px 4px #222;
+}
+.recommend p {
+    line-height: 2rem;
+}
+.wrap ul {
+    margin: 1rem 0;
+    list-style-type: none;
+    text-align: left;
+    color: #c0c0c0;
+}
+.wrap li {
+    padding: .3rem 1rem;
+}
+.wrap li:hover {
+    background: #2ba07b;
+}
+.wrap li img {
+    margin-right: .3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 2px 2px #111;
+    vertical-align: middle;
+}
+.wrap .test {
+    position: relative;
+}
+.wrap .test:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(43,43,43,0.5), rgba(43,43,43,1));
+}
+.item.change {
+    overflow: visible;
+}
+.item.change .wrap {
+    position: relative;
+    box-shadow: 0 2px 5px 2px #111;
+    background: #2b2b2b;
+    z-index: 1;
+}
+.item.change .test:after {
+    background: none;
+}
